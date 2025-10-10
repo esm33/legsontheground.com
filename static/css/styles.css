@@ -39,6 +39,18 @@
     --lavender-800: #5D2BDB;
     --lavender-900: #40189A;
 
+    /* Sunset accent (warm orange/papaya for highlights) */
+    --sunset-50: #FFF8F2;
+    --sunset-100: #FFF0E0;
+    --sunset-200: #FFE0BF;
+    --sunset-300: #FFD19A;
+    --sunset-400: #FFC07A;
+    --sunset-500: #FFAE4D;   /* Primary sunset accent */
+    --sunset-600: #FF8F2B;
+    --sunset-700: #F56F19;
+    --sunset-800: #C94F10;
+    --sunset-900: #923708;
+
     /* Neutrals - Warmer, more sophisticated (30% of 60-30-10 rule) */
     --warm-white: #FFF9F9;   /* Off-white with subtle warmth */
     --white: #FFFFFF;
@@ -222,7 +234,78 @@
     --z-modal: 1050;
     --z-popover: 1060;
     --z-tooltip: 1070
-    }
+    
+    /* ====================== LEGACY COLOR MAPPINGS (StyleCare compatibility) ====================== */
+    /* Map older theme tokens (coral/navy/teal) to the new blush / mauve / lavender / sunset palette
+       This allows existing utility classes (.text-coral-500, .bg-navy-700, etc.) to reflect the
+       StyleCare visual identity without refactoring every rule immediately. */
+    --coral: var(--blush-500);
+    --coral-50: var(--blush-50);
+    --coral-100: var(--blush-100);
+    --coral-200: var(--blush-200);
+    --coral-300: var(--blush-300);
+    --coral-400: var(--blush-400);
+    --coral-500: var(--blush-500);
+    --coral-600: var(--blush-600);
+    --coral-700: var(--blush-700);
+    --coral-800: var(--blush-800);
+    --coral-900: var(--blush-900);
+
+    /* Map navy -> mauve (darker, elegant headings / solids) */
+    --navy-50: var(--mauve-50);
+    --navy-100: var(--mauve-100);
+    --navy-200: var(--mauve-200);
+    --navy-300: var(--mauve-300);
+    --navy-400: var(--mauve-400);
+    --navy-500: var(--mauve-500);
+    --navy-600: var(--mauve-600);
+    --navy-700: var(--mauve-700);
+    --navy-800: var(--mauve-800);
+    --navy-900: var(--mauve-900);
+
+    /* Map teal -> lavender accents (soft secondary accent) */
+    --teal-50: var(--lavender-50);
+    --teal-100: var(--lavender-100);
+    --teal-200: var(--lavender-200);
+    --teal-300: var(--lavender-300);
+    --teal-400: var(--lavender-400);
+    --teal-500: var(--lavender-500);
+    --teal-600: var(--lavender-600);
+    --teal-700: var(--lavender-700);
+    --teal-800: var(--lavender-800);
+    --teal-900: var(--lavender-900);
+
+    /* Shadow / icon aliases so components using legacy shadow tokens get the new palette feel */
+    --shadow-icon-coral: var(--shadow-icon-blush);
+    --shadow-icon-teal: var(--shadow-icon-lavender);
+    --shadow-icon-navy: var(--shadow-icon-mauve);
+
+}
+
+/* ====================== 3. HERO STYLES (Brand accent) ====================== */
+.hero-title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-extrabold);
+    text-align: center;
+    /* Pink-to-white gradient for large header text */
+    background: linear-gradient(90deg, var(--blush-500) 0%, #ffffff 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    /* Soft lavender drop shadow to lift text */
+    text-shadow: 0 6px 20px rgba(148,79,150,0.08);
+}
+
+/* Ensure subtitle contrasts well on hero images */
+.hero-subtitle {
+    color: var(--warm-white);
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.75rem auto 1.5rem auto;
+}
 /* ====================== 2. UTILITY CLASSES ====================== */
 /* Card Base - Provides background, border, shadow, padding, hover lift effect
    Modifiers: .card-testimonial (border accent), .card-faq (accordion) */
