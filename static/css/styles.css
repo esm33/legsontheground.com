@@ -3,46 +3,46 @@
 :root {
     /* Premium Color Palette - Refined & Sophisticated */
 
-    /* Primary - Refined Coral (Less aggressive, more premium) */
-    --coral-50: #FFF5F5;
-    --coral-100: #FFE3E3;
-    --coral-200: #FFC9C9;
-    --coral-300: #FFA8A8;
-    --coral-400: #FF8787;
-    --coral-500: #FF6B6B;     /* Primary coral */
-    --coral-600: #FA5252;     /* Hover state */
-    --coral-700: #F03E3E;     /* Active state */
-    --coral-800: #E03131;
-    --coral-900: #C92A2A;
+    /* Feminine Palette - Soft Blush & Lavender */
+    --blush-50: #FFF8F9;
+    --blush-100: #FFEFF2;
+    --blush-200: #FFDDE6;
+    --blush-300: #FFC6D9;
+    --blush-400: #FFABC8;
+    --blush-500: #FF8FB3;     /* Primary blush */
+    --blush-600: #F76E9D;     /* Hover state */
+    --blush-700: #E85B8A;     /* Active state */
+    --blush-800: #D24A77;
+    --blush-900: #B33A63;
 
-    /* Navy - Warmer, less oppressive (60-30-10 rule primary) */
-    --navy-50: #F0F4F8;
-    --navy-100: #D9E2EC;
-    --navy-200: #BCCCDC;
-    --navy-300: #9FB3C8;
-    --navy-400: #829AB1;
-    --navy-500: #627D98;
-    --navy-600: #486581;
-    --navy-700: #334E68;     /* Primary navy (warmer than before) */
-    --navy-800: #243B53;
-    --navy-900: #102A43;     /* Darkest navy */
+    /* Soft Mauve - Secondary neutral for headings/accents */
+    --mauve-50: #FBF7FB;
+    --mauve-100: #F3EAF5;
+    --mauve-200: #E9D6EE;
+    --mauve-300: #D9BFE0;
+    --mauve-400: #C7A7D1;
+    --mauve-500: #B48FC0;
+    --mauve-600: #9F6FA8;
+    --mauve-700: #8B4F8F;     /* Primary mauve for headings */
+    --mauve-800: #6F386E;
+    --mauve-900: #4D1F4E;     /* Darkest mauve */
 
-    /* Teal - Accent color (10% of 60-30-10 rule) */
-    --teal-50: #F0FCFB;
-    --teal-100: #C6F6F0;
-    --teal-200: #8EEEE4;
-    --teal-300: #4ECDC4;     /* Primary teal */
-    --teal-400: #3AB8AB;
-    --teal-500: #2BA599;
-    --teal-600: #1D8B82;
-    --teal-700: #0B9A8D;     /* Text safe */
-    --teal-800: #087B6F;
-    --teal-900: #065D54;
+    /* Lavender Accent - soft secondary accent */
+    --lavender-50: #FCFBFF;
+    --lavender-100: #F3F0FF;
+    --lavender-200: #E6E0FF;
+    --lavender-300: #D8CCFF;
+    --lavender-400: #C8B3FF;
+    --lavender-500: #B899FF;   /* Primary lavender accent */
+    --lavender-600: #9F77FF;
+    --lavender-700: #7B4BFF;
+    --lavender-800: #5D2BDB;
+    --lavender-900: #40189A;
 
     /* Neutrals - Warmer, more sophisticated (30% of 60-30-10 rule) */
-    --warm-white: #FAFBF8;   /* Off-white with warmth */
+    --warm-white: #FFF9F9;   /* Off-white with subtle warmth */
     --white: #FFFFFF;
-    --off-white: #FAFBF8;
+    --off-white: #FFF7F8;
     --black: #000000;
 
     --gray-50: #F7F9FA;
@@ -155,16 +155,16 @@
     --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 
     /* Focus Ring Shadows - Accessibility */
-    --shadow-focus: 0 0 0 3px rgba(255, 107, 107, 0.15);
-    --shadow-focus-coral: 0 0 0 3px rgba(255, 107, 107, 0.15);
-    --shadow-focus-navy: 0 0 0 3px rgba(51, 78, 104, 0.15);
-    --shadow-focus-teal: 0 0 0 3px rgba(78, 205, 196, 0.15);
+    --shadow-focus: 0 0 0 3px rgba(255, 143, 179, 0.15);
+    --shadow-focus-blush: 0 0 0 3px rgba(255, 143, 179, 0.15);
+    --shadow-focus-mauve: 0 0 0 3px rgba(148, 79, 150, 0.12);
+    --shadow-focus-lavender: 0 0 0 3px rgba(184, 153, 255, 0.12);
 
     /* Button-Specific Shadows (Premium Feel) */
-    --shadow-btn-primary: 0 1px 2px rgba(0, 0, 0, 0.05),
-                          0 4px 12px rgba(255, 107, 107, 0.15);
-    --shadow-btn-primary-hover: 0 4px 6px rgba(0, 0, 0, 0.07),
-                                0 12px 24px rgba(255, 107, 107, 0.25);
+    --shadow-btn-primary: 0 1px 2px rgba(0, 0, 0, 0.04),
+                          0 6px 18px rgba(255, 143, 179, 0.12);
+    --shadow-btn-primary-hover: 0 6px 12px rgba(0, 0, 0, 0.06),
+                                0 16px 32px rgba(255, 143, 179, 0.2);
     --shadow-btn-outline: 0 0 0 1px rgba(255, 255, 255, 0.1),
                           0 4px 12px rgba(0, 0, 0, 0.15);
     --shadow-btn-outline-hover: 0 0 0 1px rgba(255, 255, 255, 0.2),
@@ -173,13 +173,13 @@
     /* Component-Specific Shadows */
     --shadow-card: var(--shadow-lg);
     --shadow-card-hover: var(--shadow-xl);
-    --shadow-icon-coral: 0 4px 20px rgba(255, 107, 107, 0.4);
-    --shadow-icon-teal: 0 4px 20px rgba(78, 205, 196, 0.4);
-    --shadow-icon-navy: 0 4px 20px rgba(51, 78, 104, 0.4);
+    --shadow-icon-blush: 0 4px 20px rgba(255, 143, 179, 0.35);
+    --shadow-icon-lavender: 0 4px 20px rgba(184, 153, 255, 0.35);
+    --shadow-icon-mauve: 0 4px 20px rgba(148, 79, 150, 0.28);
 
     /* Legacy shadow variables for backward compatibility */
-    --shadow-btn-coral: var(--shadow-btn-primary);
-    --shadow-btn-coral-hover: var(--shadow-btn-primary-hover);
+    --shadow-btn-blush: var(--shadow-btn-primary);
+    --shadow-btn-blush-hover: var(--shadow-btn-primary-hover);
     --shadow-success: 0 4px 20px rgba(37, 211, 102, 0.5);
     --shadow-success-hover: 0 6px 30px rgba(37, 211, 102, 0.7);
 

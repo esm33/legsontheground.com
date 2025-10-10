@@ -2,45 +2,42 @@
 # Edit this file to update global site settings
 
 site:
-  title: "Legs on the Ground"
-  tagline: "Your Trusted Property Partner in Puerto Rico"
-  description: "Professional bilingual property concierge services for mainland owners in Puerto Rico. Property check-ins, translation, transportation - trusted local support in San Juan."
-  url: "https://legsontheground.com"
-  author: "Legs on the Ground"
+  title: "StyleCare"
+  tagline: "Clean girl styling for college women"
+  description: "StyleCare helps college women (18-25) build effortless wardrobes with curated clean girl capsules, budget-friendly shopping, and educational styling guides."
+  url: "https://stylecare.example.com"
+  author: "StyleCare"
   language: "en"
   
   # Contact Information
-  phone: "+1 (787) 555-1234"
-  phone_raw: "+17875551234"
-  email: "contact@legsontheground.com"
-  whatsapp: "17875551234"
+  phone: "+1 (555) 555-5555"
+  phone_raw: "+15555555555"
+  email: "hello@stylecare.example.com"
+  whatsapp: "15555555555"
   
-  # Location
+  # Location (optional)
   location:
-    city: "San Juan"
-    region: "Puerto Rico"
+    city: "Remote"
+    region: "Global"
     coordinates:
-      latitude: 18.4655
-      longitude: -66.1057
+      latitude: 0.0
+      longitude: 0.0
   
   # Social Media (set real URLs or leave empty to hide)
   social:
     facebook: ""
     instagram: ""
-    linkedin: ""
+    tiktok: ""
     twitter: ""
   
   # SEO Keywords
   keywords:
-    - "Puerto Rico property management"
-    - "bilingual property services"
-    - "San Juan concierge"
-    - "property check-ins Puerto Rico"
-    - "mainland property owners"
-    - "Act 60 services"
-    - "Puerto Rico translation"
-    - "property monitoring"
-    - "absentee owner services"
+    - "clean girl aesthetic"
+    - "college styling"
+    - "capsule wardrobe"
+    - "affordable styling"
+    - "style quiz"
+    - "student fashion"
 
 # Build Configuration
 build:
