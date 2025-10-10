@@ -2,32 +2,32 @@
 # Edit this file to add/update customer testimonials
 
 testimonials:
-  - id: michael-r
-    name: "Michael R."
-    location: "Florida → San Juan"
+  - id: emma-s
+    name: "Emma S."
+    location: "Boston, MA"
     rating: 5
     avatar_icon: "fa-user"
     order: 1
     quote: |
-      Finally found someone I can trust with my property in San Juan! The detailed 
-      photo reports give me complete peace of mind while I'm in Florida.
+      StyleCare totally simplified my mornings. The capsule guide made outfits so
+      easy—I feel put together for class with almost no effort.
     
-  - id: jennifer-l
-    name: "Jennifer L."
-    location: "Texas → Dorado"
+  - id: rachel-m
+    name: "Rachel M."
+    location: "Austin, TX"
     rating: 5
     avatar_icon: "fa-user"
     order: 2
     quote: |
-      The translation service saved me thousands! I couldn't have navigated the 
-      permit process without the bilingual help and local knowledge.
+      I loved the shopping session—found great pieces that actually fit my lifestyle
+      and budget. My friends keep asking where I shop now!
     
-  - id: david-k
-    name: "David K."
-    location: "New York → Carolina"
+  - id: sara-k
+    name: "Sara K."
+    location: "New York, NY"
     rating: 5
     avatar_icon: "fa-user"
     order: 3
     quote: |
-      Professional, reliable, and truly cares about my property. The WhatsApp 
-      updates with photos after each visit are incredibly helpful.
+      The quiz was fast and shockingly accurate. My capsule has made mornings so
+      much less stressful and my wardrobe looks cohesive.

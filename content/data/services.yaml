@@ -2,80 +2,78 @@
 # Edit this file to update service offerings
 
 services:
-  - id: property-management
-    title: "Property Management & Check-Ins"
-    icon: "fa-home"
-    icon_color: "default"
-    price: "Starting at $100"
-    price_period: "per visit"
-    badge: "Most Popular"
-    image: "images/services/service-property-visit.jpg"
-    image_alt: "Professional conducting thorough property inspection with documentation in Puerto Rico"
-    cta_text: "Book Visit"
-    cta_link: "contact.html"
+  - id: style-quiz
+    title: "Style Match Quiz"
+    icon: "fa-poll"
+    icon_color: "blush"
+    price: "Free"
+    price_period: ""
+    badge: "Start Here"
+    image: "images/services/service-quiz.jpg"
+    image_alt: "Illustration of a style quiz and wardrobe icons"
+    cta_text: "Take the Quiz"
+    cta_link: "#quiz"
     order: 1
     description: |
-      Complete property oversight with detailed documentation, maintenance coordination, 
-      and immediate issue alerts. Your eyes and hands on the ground in Puerto Rico.
+      Quickly discover your clean-girl style profile with our 5-minute quiz. Get a personalized
+      style brief and capsule suggestions tailored to campus life and a student budget.
     features:
-      - "Detailed photo & video reports"
-      - "Maintenance coordination & oversight"
-      - "Contractor management"
-      - "Mail collection & property preparation"
-      - "Same-day reporting via WhatsApp"
+      - "5-minute interactive quiz"
+      - "Personalized style brief"
+      - "Suggested capsule pieces"
+      - "Budget-friendly recommendations"
+      - "Confidence-boosting outfit formulas"
 
-  - id: bilingual-concierge
-    title: "Bilingual Concierge Services"
-    icon: "fa-language"
-    icon_color: "teal"
-    price: "Starting at $75"
-    price_period: "per hour"
-    badge: null
-    image: "images/services/service-translation.jpg"
-    image_alt: "Bilingual translator working with English-Spanish documents for property owners"
-    cta_text: "Get Help"
-    cta_link: "contact.html"
+  - id: capsule-wardrobe
+    title: "Capsule Wardrobes"
+    icon: "fa-tshirt"
+    icon_color: "mauve"
+    price: "From $120"
+    price_period: "per capsule"
+    badge: "Popular"
+    image: "images/services/service-capsule.jpg"
+    image_alt: "Neatly arranged capsule wardrobe on a bed"
+    cta_text: "View Options"
+    cta_link: "#capsules"
     order: 2
     description: |
-      Professional English-Spanish translation, interpretation, and local coordination. 
-      Navigate permits, contractors, and government offices with confidence.
+      Curated capsule wardrobes built for the clean-girl aesthetic—versatile, minimal,
+      and effortless to style. Ideal for college students who want a cohesive closet.
     features:
-      - "Document translation & interpretation"
-      - "Meeting & phone call assistance"
-      - "Government & permit navigation"
-      - "Contractor communication"
-      - "Cultural bridge & local expertise"
+      - "Curated essentials + staples"
+      - "Mix-and-match outfit plans"
+      - "Seasonal refresh options"
+      - "Affordable styling choices"
 
-  - id: transportation-logistics
-    title: "Transportation & Logistics"
-    icon: "fa-car"
-    icon_color: "navy"
-    price: "Starting at $75"
-    price_period: "per trip"
+  - id: shopping-assist
+    title: "Personalized Shopping & Rentals"
+    icon: "fa-shopping-bag"
+    icon_color: "sunset"
+    price: "From $45"
+    price_period: "per session"
     badge: null
-    image: "images/services/service-transportation.jpg"
-    image_alt: "Professional transportation service with modern vehicle at San Juan airport"
-    cta_text: "Book Ride"
-    cta_link: "contact.html"
+    image: "images/services/service-shopping.jpg"
+    image_alt: "Styled outfits laid out for a shopping session"
+    cta_text: "Book Session"
+    cta_link: "#contact"
     order: 3
     description: |
-      Airport transfers, key delivery, meeting transportation, and property access coordination. 
-      Reliable logistics support whenever you need it.
+      One-on-one shopping sessions and rental sourcing to fill gaps in your wardrobe.
+      We shop thoughtfully—prioritizing fit, quality, and longevity for a polished look.
     features:
-      - "Airport pickup & drop-off"
-      - "Property key & supply delivery"
-      - "Meeting transportation"
-      - "Emergency property access"
-      - "Flexible scheduling & reliability"
+      - "Personalized store or online shopping"
+      - "Rental suggestions for events"
+      - "Fit and sizing guidance"
+      - "Sustainable/affordable options"
 
 # Service Packages (optional custom offerings)
 packages:
   monthly_basic:
     name: "Monthly Basic"
     price: "$350"
-    description: "4 property visits + unlimited WhatsApp support"
+    description: "Monthly styling check-ins + outfit ideas"
     
   monthly_premium:
     name: "Monthly Premium"
     price: "$750"
-    description: "8 property visits + translation + transportation included"
+    description: "Personalized outfit curation + shopping sessions included"

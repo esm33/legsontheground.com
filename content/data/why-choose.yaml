@@ -2,35 +2,35 @@
 # Edit this file to update the reasons customers trust you
 
 why_choose:
-  section_title: "Why Mainland Owners Trust Us"
+  section_title: "Why StyleCare Works"
   
   reasons:
-    - id: bilingual
-      title: "Truly Bilingual Service"
-      icon: "fa-language"
-      image: "images/about/about-bilingual.jpg"
-      image_alt: "Bilingual professional fluent in English and Spanish for seamless communication"
+    - id: effortless-looks
+      title: "Effortless Clean-Girl Looks"
+      icon: "fa-magic"
+      image: "images/about/about-experience.jpg"
+      image_alt: "Model showcasing a minimal clean-girl outfit"
       order: 1
       description: |
-        Fluent in English and Spanish. Seamlessly communicate with local contractors, 
-        government officials, and service providers. No more communication barriers.
+        We create polished, low-effort outfits that look intentional. Simple combinations
+        that feel fresh every day—no overthinking required.
     
-    - id: local-knowledge
-      title: "Deep Local Knowledge"
-      icon: "fa-map-marked-alt"
+    - id: student-budget
+      title: "Student-Friendly Budgeting"
+      icon: "fa-wallet"
       image: "images/about/about-local-knowledge.jpg"
-      image_alt: "Local expert with deep knowledge of Puerto Rico's unique processes and culture"
+      image_alt: "Affordable clothing options arranged neatly"
       order: 2
       description: |
-        Born and raised in Puerto Rico. We understand the unique processes, cultural 
-        nuances, and the "right way" to get things done on the island.
+        Style that fits a student's wallet—smart choices that maximize wearability and
+        stretch your wardrobe without breaking the bank.
     
-    - id: mainland-understanding
-      title: "Mainland Understanding"
-      icon: "fa-flag-usa"
-      image: "images/about/about-experience.jpg"
-      image_alt: "Experienced professional with 30+ years understanding mainland US expectations"
+    - id: confidence-simplicity
+      title: "Confidence Through Simplicity"
+      icon: "fa-heart"
+      image: "images/about/about-bilingual.jpg"
+      image_alt: "Student smiling in a clean, confident outfit"
       order: 3
       description: |
-        30+ years of experience working with US mainland clients. We understand your 
-        expectations and translate them into local reality.
+        Our approach helps you feel more confident by removing daily outfit friction.
+        Focus on your studies while your wardrobe quietly supports your best self.

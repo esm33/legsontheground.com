@@ -33,13 +33,13 @@ footer_nav:
   services:
     title: "Services"
     links:
-      - title: "Property Check-Ins"
+      - title: "Style Quiz"
         url: "#services"
-      - title: "Translation Services"
+      - title: "Capsule Wardrobes"
         url: "#services"
-      - title: "Transportation"
+      - title: "Shopping & Rentals"
         url: "#services"
-      - title: "Local Coordination"
+      - title: "Personal Styling"
         url: "#services"
   
   company:

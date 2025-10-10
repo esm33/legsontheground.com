@@ -21,8 +21,7 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.description }}">
     <meta property="og:image" content="{{ page.seo.og_image | default(site.url ~ '/images/social/og-image.jpg') }}">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="es_PR">
+  <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="{{ page.seo.twitter_card | default('summary_large_image') }}">
@@ -119,16 +118,16 @@
     
     {% include 'components/footer.html' %}
     
-    {% if features.show_whatsapp_float %}
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/{{ site.whatsapp }}?text=Hi!%20I'd%20like%20to%20learn%20more%20about%20your%20property%20services" 
-       class="whatsapp-float flex items-center justify-center" 
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-    {% endif %}
+  {% if features.show_whatsapp_float %}
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/{{ site.whatsapp }}?text=Hi!%20I'm%20interested%20in%20StyleCare%20services%20%28quiz%2C%20capsule%2C%20shopping%29" 
+     class="whatsapp-float flex items-center justify-center" 
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+  {% endif %}
 
     <!-- Scroll to Top Button -->
     <button class="scroll-top" aria-label="Scroll to top">
