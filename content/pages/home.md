@@ -7,7 +7,7 @@ page_id: "home"
 hero:
   title: "StyleCare — Clean Girl Styling for College Women"
   subtitle: "Minimal, polished, effortless looks curated for college women (18–25) who love the clean girl aesthetic — neutral tones, elevated basics, and easy outfits."
-  image: "https://images.unsplash.com/photo-1520975913386-3a6f1b1b4b5a?w=1600&q=80&auto=format&fit=crop"
+  image: "images/hero/clean-girl-hero.jpg"
   image_alt: "Two college students trying on neutral, minimalist outfits"
   cta_primary:
     text: "Find Your Clean Girl Look"
@@ -37,7 +37,7 @@ services:
 cta:
   title: "Ready to perfect your clean girl wardrobe?"
   description: "Take a quick quiz to get neutral-ready outfits, capsule wardrobes, and styling tips that make dressing effortless."
-  background_image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1600&q=80&auto=format&fit=crop"
+  background_image: "images/hero/hero-main.jpg"
   buttons:
     - text: "Take the Quiz"
       url: "#quiz"

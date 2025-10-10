@@ -8,8 +8,8 @@ why_choose:
     - id: effortless-looks
       title: "Effortless Clean-Girl Looks"
       icon: "fa-magic"
-  image: "https://images.unsplash.com/photo-1520975913386-3a6f1b1b4b5a?w=1200&q=80&auto=format&fit=crop"
-  image_alt: "Model showcasing a minimal clean-girl outfit"
+      image: "images/about/about-experience.jpg"
+      image_alt: "Model showcasing a minimal clean-girl outfit"
       order: 1
       description: |
         We create polished, low-effort outfits that look intentional. Simple combinations
@@ -18,8 +18,8 @@ why_choose:
     - id: student-budget
       title: "Student-Friendly Budgeting"
       icon: "fa-wallet"
-  image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1200&q=80&auto=format&fit=crop"
-  image_alt: "Affordable clothing options arranged neatly"
+      image: "images/about/about-local-knowledge.jpg"
+      image_alt: "Affordable clothing options arranged neatly"
       order: 2
       description: |
         Style that fits a student's wallet—smart choices that maximize wearability and
@@ -28,8 +28,8 @@ why_choose:
     - id: confidence-simplicity
       title: "Confidence Through Simplicity"
       icon: "fa-heart"
-  image: "https://images.unsplash.com/photo-1514996937319-344454492b37?w=1200&q=80&auto=format&fit=crop"
-  image_alt: "Student smiling in a clean, confident outfit"
+      image: "images/about/about-bilingual.jpg"
+      image_alt: "Student smiling in a clean, confident outfit"
       order: 3
       description: |
         Our approach helps you feel more confident by removing daily outfit friction.

@@ -9,8 +9,8 @@ services:
     price: "Free"
     price_period: ""
     badge: "Start Here"
-  image: "https://images.unsplash.com/photo-1520975913386-3a6f1b1b4b5a?w=1200&q=80&auto=format&fit=crop"
-  image_alt: "Illustration of a style quiz and wardrobe icons"
+    image: "images/services/service-quiz.jpg"
+    image_alt: "Illustration of a style quiz and wardrobe icons"
     cta_text: "Take the Quiz"
     cta_link: "#quiz"
     order: 1
@@ -31,8 +31,8 @@ services:
     price: "From $120"
     price_period: "per capsule"
     badge: "Popular"
-  image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1200&q=80&auto=format&fit=crop"
-  image_alt: "Neatly arranged capsule wardrobe on a bed"
+    image: "images/services/service-capsule.jpg"
+    image_alt: "Neatly arranged capsule wardrobe on a bed"
     cta_text: "View Options"
     cta_link: "#capsules"
     order: 2
@@ -52,8 +52,8 @@ services:
     price: "From $45"
     price_period: "per session"
     badge: null
-  image: "https://images.unsplash.com/photo-1520975913386-3a6f1b1b4b5a?w=1200&q=80&auto=format&fit=crop"
-  image_alt: "Styled outfits laid out for a shopping session"
+    image: "images/services/service-shopping.jpg"
+    image_alt: "Styled outfits laid out for a shopping session"
     cta_text: "Book Session"
     cta_link: "#contact"
     order: 3
