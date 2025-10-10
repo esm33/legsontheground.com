@@ -819,8 +819,9 @@ body {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-loose);
-    color: var(--gray-700);
-    background-color: var(--white);
+    color: var(--gray-800);
+    /* Use warm, off-white background to avoid stark white pages for a softer StyleCare aesthetic */
+    background-color: var(--warm-white);
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
