@@ -281,7 +281,7 @@
 /* Card Base - Provides background, border, shadow, padding, hover lift effect
    Modifiers: .card-testimonial (border accent), .card-faq (accordion) */
 .card {
-    background: linear-gradient(180deg, var(--warm-white) 0%, var(--white) 100%);
+    background: linear-gradient(180deg, var(--blush-50) 0%, var(--white) 100%);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     box-shadow: var(--shadow-sm);
@@ -347,6 +347,11 @@
     background: linear-gradient(135deg, var(--navy-700) 0%, var(--navy-800) 100%);
     box-shadow: var(--shadow-icon-navy)
     }
+/* Make small inline icons (e.g., trust bar) use blush accent */
+.trust-item i, .trust-item svg {
+    color: var(--blush-500);
+    margin-right: 0.5rem;
+}
 /* Dark Context Utility */
 .dark-context h1, .dark-context h2, .dark-context h3, .dark-context h4, .dark-context h5, .dark-context h6 {
     color: var(--white) !important
@@ -1523,7 +1528,7 @@ section.dark-context .btn-outline:hover,
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(10, 37, 64, 0.9), rgba(26, 69, 112, 0.8));
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.55), rgba(26, 69, 112, 0.5));
     z-index: 1;
 }
 
@@ -1556,6 +1561,15 @@ section.dark-context .btn-outline:hover,
     color: transparent;
     /* Soft mauve drop shadow to lift text */
     text-shadow: 0 6px 20px rgba(148,79,150,0.08);
+}
+
+/* Ensure hero gradient shows even when inside .dark-context (higher specificity) */
+.dark-context .hero-title {
+    background: linear-gradient(90deg, var(--blush-500) 0%, var(--white) 60%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
 }
 
 /* Premium Hero Subtitle - Efficient & Clear */
