@@ -2504,7 +2504,7 @@ section.dark-context .btn-outline:hover,
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    background: rgba(16, 42, 67, 0.85);  /* DARK OVERLAY for text contrast */
+    /* background: rgba(16, 42, 67, 0.85);  DARK OVERLAY for text contrast */
     z-index: 1 !important;  /* Required: Ensure overlay is below content */
 }
 
