@@ -237,9 +237,7 @@
     
     /* ====================== LEGACY COLOR MAPPINGS (StyleCare compatibility) ====================== */
     /* Map older theme tokens (coral/navy/teal) to the new blush / mauve / lavender / sunset palette
-       This allows existing utility classes (.text-coral-500, .bg-navy-700, etc.) to reflect the
-       StyleCare visual identity without refactoring every rule immediately. */
-    --coral: var(--blush-500);
+       so existing utility classes update immediately to the feminine brand. */
     --coral-50: var(--blush-50);
     --coral-100: var(--blush-100);
     --coral-200: var(--blush-200);
@@ -251,7 +249,6 @@
     --coral-800: var(--blush-800);
     --coral-900: var(--blush-900);
 
-    /* Map navy -> mauve (darker, elegant headings / solids) */
     --navy-50: var(--mauve-50);
     --navy-100: var(--mauve-100);
     --navy-200: var(--mauve-200);
@@ -263,7 +260,6 @@
     --navy-800: var(--mauve-800);
     --navy-900: var(--mauve-900);
 
-    /* Map teal -> lavender accents (soft secondary accent) */
     --teal-50: var(--lavender-50);
     --teal-100: var(--lavender-100);
     --teal-200: var(--lavender-200);
@@ -275,53 +271,28 @@
     --teal-800: var(--lavender-800);
     --teal-900: var(--lavender-900);
 
-    /* Shadow / icon aliases so components using legacy shadow tokens get the new palette feel */
+    /* Shadow aliases */
     --shadow-icon-coral: var(--shadow-icon-blush);
     --shadow-icon-teal: var(--shadow-icon-lavender);
     --shadow-icon-navy: var(--shadow-icon-mauve);
 
 }
-
-/* ====================== 3. HERO STYLES (Brand accent) ====================== */
-.hero-title {
-    font-family: var(--font-display);
-    font-size: var(--text-5xl);
-    line-height: var(--leading-tight);
-    font-weight: var(--font-weight-extrabold);
-    text-align: center;
-    /* Pink-to-white gradient for large header text */
-    background: linear-gradient(90deg, var(--blush-500) 0%, #ffffff 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    /* Soft lavender drop shadow to lift text */
-    text-shadow: 0 6px 20px rgba(148,79,150,0.08);
-}
-
-/* Ensure subtitle contrasts well on hero images */
-.hero-subtitle {
-    color: var(--warm-white);
-    text-align: center;
-    max-width: 50rem;
-    margin: 0.75rem auto 1.5rem auto;
-}
 /* ====================== 2. UTILITY CLASSES ====================== */
 /* Card Base - Provides background, border, shadow, padding, hover lift effect
    Modifiers: .card-testimonial (border accent), .card-faq (accordion) */
 .card {
-    background: var(--white);
+    background: linear-gradient(180deg, var(--warm-white) 0%, var(--white) 100%);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     box-shadow: var(--shadow-sm);
-    border: 1px solid var(--gray-100);
+    border: 1px solid rgba(0,0,0,0.04);
     transition: all var(--transition-base);
     position: relative
     }
 .card:hover {
     transform: translatey(-6px);
     box-shadow: var(--shadow-xl);
-    border-color: rgba(216, 67, 67, 0.3)
+    border-color: rgba(255, 174, 77, 0.25)
     }
 .card::before {
     content: "";
@@ -330,7 +301,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(216, 67, 67, 0.02) 0%, rgba(11, 154, 141, 0.02) 100%);
+    background: linear-gradient(135deg, rgba(255, 143, 179, 0.02) 0%, rgba(184, 153, 255, 0.02) 100%);
     opacity: 0;
     transition: opacity var(--transition-base);
     border-radius: var(--radius-lg);
@@ -340,13 +311,13 @@
     opacity: 1
     }
 .card-testimonial {
-    border-left: 4px solid var(--coral-700)
+    border-left: 4px solid var(--sunset-600)
     }
 /* Icon Badge Base Component */
 .icon-badge {
     border-radius: var(--radius-full);
-    background: linear-gradient(135deg, var(--coral-500) 0%, var(--coral-600) 100%);
-    box-shadow: var(--shadow-icon-coral);
+    background: linear-gradient(135deg, var(--blush-400) 0%, var(--blush-600) 100%);
+    box-shadow: var(--shadow-icon-blush);
     position: relative;
     z-index: 1
     }
@@ -373,7 +344,7 @@
     box-shadow: var(--shadow-icon-teal)
     }
 .icon-badge-navy {
-    background: linear-gradient(135deg, var(--navy-700) 0%, #1a4570 100%);
+    background: linear-gradient(135deg, var(--navy-700) 0%, var(--navy-800) 100%);
     box-shadow: var(--shadow-icon-navy)
     }
 /* Dark Context Utility */
@@ -819,9 +790,8 @@ body {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-loose);
-    color: var(--gray-800);
-    /* Use warm, off-white background to avoid stark white pages for a softer StyleCare aesthetic */
-    background-color: var(--warm-white);
+    color: var(--gray-700);
+    background-color: var(--white);
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -1578,10 +1548,14 @@ section.dark-context .btn-outline:hover,
     letter-spacing: -0.02em;
     margin: 0 auto 0.875rem;
     max-width: 950px;
-    color: white;
-    text-shadow:
-        0 1px 2px rgba(0, 0, 0, 0.1),
-        0 4px 12px rgba(0, 0, 0, 0.15);
+    /* Pink-to-white gradient for large header text */
+    background: linear-gradient(90deg, var(--blush-500) 0%, var(--white) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    /* Soft mauve drop shadow to lift text */
+    text-shadow: 0 6px 20px rgba(148,79,150,0.08);
 }
 
 /* Premium Hero Subtitle - Efficient & Clear */
@@ -1763,7 +1737,7 @@ section.dark-context .btn-outline:hover,
     }
 .card-faq.active, .accordion-item.active {
     border-color: var(--coral-700);
-    box-shadow: 0 8px 24px rgba(216, 67, 67, 0.12)
+    box-shadow: 0 8px 24px rgba(255, 143, 179, 0.12)
     }
 /* Accordion Question/Header - Refined */
 .faq-question, .accordion-header, .accordion-question {
@@ -1801,7 +1775,7 @@ section.dark-context .btn-outline:hover,
     border-radius: var(--radius-md);
     }
 .card-faq.active .faq-question, .accordion-item.active .accordion-header {
-    background: linear-gradient(90deg, rgba(216, 67, 67, 0.03) 0%, transparent 100%)
+    background: linear-gradient(90deg, rgba(255, 143, 179, 0.03) 0%, transparent 100%)
     }
 .card-faq.active .faq-question::before, .accordion-item.active .accordion-header::before {
     width: 4px;
@@ -1862,7 +1836,7 @@ section.dark-context .btn-outline:hover,
     background: linear-gradient(135deg, var(--coral-700) 0%, var(--coral-500) 100%);
     color: var(--white);
     transform: rotate(135deg);
-    box-shadow: 0 4px 12px rgba(216, 67, 67, 0.3)
+    box-shadow: 0 4px 12px rgba(255, 143, 179, 0.3)
     }
 .card-faq.active .faq-toggle::after, .accordion-item.active .accordion-toggle::after {
     opacity: 0
